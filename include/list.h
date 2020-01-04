@@ -53,6 +53,9 @@ int list_remove_all_data(list_t *list, void *data);
 // fromIndex, inclusive, and toIndex, exclusive
 int list_remove_range(list_t *list, int index_from, int index_to);
 
+// Reverse order of list
+int list_reverse(list_t *list);
+
 // Replaces the element at the specified position in this list with
 // the specified element without destroy
 int list_set(list_t *list, void *data, int index);
