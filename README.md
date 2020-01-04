@@ -86,6 +86,12 @@ Replaces the element at the specified position in this list with the specified e
 ```
 int list_replace(list_t *list, void *data, int index);
 ```
+### Order :
+
+Reverse order of list
+```
+int list_reverse(list_t *list);
+```
 
 ### Get :
 
