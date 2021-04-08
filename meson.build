@@ -1,7 +1,5 @@
 project('liblist', 'c', default_options: ['default_library=both', 'warning_level=2'] )
 
-add_global_arguments('-fdiagnostics-color=always', language: 'c')
-
 include = include_directories('include', 'include/private', 'subprojects')
 
 subdir('include')
