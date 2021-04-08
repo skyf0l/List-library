@@ -1,6 +1,29 @@
 # List-library
 List library in C
 
+## Build
+
+To build and install:
+
+```
+mkdir build
+cd build
+meson ..
+meson install
+```
+
+To test:
+
+```
+mkdir build
+cd build
+meson -Dtests=true ..
+meson test
+
+```
+
+Or, you may just use `Makefile` to do it all by hand.
+
 ## Method Summary
 
 ### List :
