@@ -9,7 +9,7 @@ if get_option('tests')
     subdir('tests')
 endif
 
-liblist_dep = declare_dependency(include_directories : include, link_with : liblist)
+liblist_dep = declare_dependency(include_directories: include, link_with: liblist)
 
 pkg_mod = import('pkgconfig')
-pkg_mod.generate(libraries : liblist, version: '1.0', name: 'liblist', filebase : 'liblist', description : 'List library in C')
+pkg_mod.generate(liblist, version: '1.0', name: 'liblist', filebase: 'liblist', subdirs: 'liblist', description: 'List library in C')
